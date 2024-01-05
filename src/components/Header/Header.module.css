@@ -1,0 +1,85 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--darkblue);
+    color: var(--blue);
+    padding-block: .75rem;
+    position: fixed;
+    top: 0;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    padding-left: 20px;
+}
+
+.header a {
+    margin-right: 1.5rem;
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 1.2rem;
+}
+
+.header a:hover {
+    color: var(--green);
+    transition: 1s;
+}
+
+.menuButton{
+    display: none;
+}
+
+/* Menu Button */
+
+@media (max-width: 768px) {
+
+    .header{
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .menuButton {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 20px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .linha {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: var(--blue);
+    }
+
+    .lista {
+        display: none;
+    }
+
+    .show {
+        display: flex;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50px;
+        background-color: var(--darkblue);
+        flex-direction: column;
+        gap: 1rem;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        box-shadow: 0 2px 2px var(--green);
+    }
+}
+
+@media (max-width: 480px) {
+    .show {
+        width: 100%;
+    }
+}

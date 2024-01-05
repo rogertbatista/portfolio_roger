@@ -1,0 +1,17 @@
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--darkblue);
+    color: var(--blue);
+    padding-block: .75rem;
+    text-align: center;
+    font-size: 1.2rem;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer span{
+    color: var(--green);
+    font-weight: bold;
+}

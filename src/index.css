@@ -1,0 +1,45 @@
+:root {
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --darkblue: #060d15;
+  --navyblue: #152c45;
+  --green: #06f3af;
+  --blue: #0f699a;
+  --background: #676a72;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+html, body{
+  background-color: #676a72;
+}
+
+/* formatacao da barra de rolagem */
+body::-webkit-scrollbar {
+  width: 12px;
+  /* largura da barra de rolagem */
+  background-color: #222;
+}
+
+body::-webkit-scrollbar-track {
+  background: #222;
+  /* cor de fundo da barra de rolagem */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+  /* cor do scroll (thumb) da barra de rolagem */
+  border-radius: 20px;
+  /* arredondar o scroll (thumb) */
+  border: 3px solid #222;
+  /* criar um espaco em volta do scroll */
+}
